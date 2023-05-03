@@ -1,0 +1,123 @@
+<!Doctype html>
+<html lang="eng">
+<title>form</title>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<style>
+body{
+background-image:url('blackbckgrn.jpg');
+}
+
+label{
+color:yellow;
+}
+input {
+background-color:#ccc;
+width:210px;
+height:27px;
+border-radius:10px;
+}
+input , label{
+position:relative;
+left:100px;
+}
+::placeholder{
+color:red;
+}
+input:placeholder-shown{
+border:2px solid red;
+}
+input:focus {
+  background-color: lightblue;
+  border:3px solid black;
+}
+div:focus-within{
+background-color:blue;
+}
+div{
+accent-color:red;
+}
+input[type=checkbox]{
+accent-color:red;
+}
+
+input[type=submit]{
+width:300px;
+height:30px;
+background-color:green;
+color:white;
+font-size:20px;
+font-weight:bold;
+position:relative;
+left:600px;
+border-radius:20px;
+}
+</style>
+<body>
+<h1>form</h1>
+<form>
+
+	
+	<label for="fname"> First name:</label>
+	<input type="text" id="fname" placeholder="your name"><br><br>
+	<label for="last name"> last name:</label>
+	<input type="text" id="last name" placeholder="last name"><br><br>
+	<label for="cnic number">CNIC number:</label>
+	<input type="number" id="cnic number"><br><br>
+	<label for="phone number">phone number:</label>
+	<input type="number" id="phone number"><br><br>
+	<label for="your cv file">your cv file:</label>
+	<input type="file" id="your cv file" multiple><br><br>
+	<label for="email address">email address:</label>
+	<input type="email" id="email address"><br><br>
+	<label for="URL of your uni">URL of your uni:</label>
+	<input type="url" id="URL of your uni"><br><br>
+	<div><label>gender:</label><br><br>
+	<input type="radio" name="gender" id="male">
+	<label for ="male">male: </label>
+	<input type="radio" name="gender" id="female">
+	<label for="female">female:</label><br><br></div>
+	<input type="password">your Degree code<br><br>
+	<label for="female">emale:</label><br><br>
+	<input type="password">your Degree code<br><br>
+	<div><label>select your subject:</label><br><br>
+	<label for="zoology">zoology:</label>
+	<input type="radio" name="select your subject" id="zoology"><br>
+		<label for="biology">biology:</label>
+	<input type="radio" name="select your subject" id="biology"><br>
+<label for="physics">physics:</label>
+	<input type="radio" name="select your subject" id="physics"><br><br><br></div>
+	
+	<label>show your interset in sports:</label>
+	<input type="range" min="0" max="100"><br><br>
+	<label for="cricket">cricket:</label>
+	<input type="checkbox" id="cricket"><br><br>
+	<label for="swwiming">swwiming:</label>
+	<input type="checkbox" id="swwiming"><br><br>
+	<label for="snooker">snooker</label>
+	<input type="checkbox" id="snooker"><br><br>
+	<label for="vollyboll">vollyboll</label>
+	<input type="checkbox" id="vollyboll"><br><br>
+	<label>choose your favourite web lang:</label><br><br>
+	<input type="radio" name="choose your favourite web lang" id="html">
+	<label for="html">html</label>
+	<input type="radio" name="choose your favourite web lang" id="css">
+	<label for="css">css</label>
+	<input type="radio" name="choose your favourite web lang" id="javascript">
+	<label for="javascript">javascript</label><br><br>
+	<input type="submit" value="submit"><br><br><br>
+	<label>datetime</label>
+	<input type="datetime-local">
+</form>
+
+
+
+
+
+<script>
+	
+</script>
+
+</body>
+</html>
